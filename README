@@ -1,6 +1,10 @@
 # IVPN Rofi Menu
 
-A simple and efficient way to manage your IVPN connection using Rofi.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Shell: Bash](https://img.shields.io/badge/Shell-Bash-blue.svg)](https://www.gnu.org/software/bash/)
+[![Dependencies: IVPN CLI](https://img.shields.io/badge/Dependencies-IVPN%20CLI-green.svg)](https://www.ivpn.net/apps-linux/)
+
+A simple and efficient way to manage your IVPN connection using Rofi. This script provides a user-friendly interface to control your IVPN VPN connection through a Rofi menu.
 
 ## Features
 
@@ -12,12 +16,18 @@ A simple and efficient way to manage your IVPN connection using Rofi.
 
 ## Installation
 
-1. Make the script executable:
+1. Clone the repository:
+```bash
+git clone https://github.com/omniXI/rofi-ivpn.git
+cd ivpn-rofi
+```
+
+2. Make the script executable:
 ```bash
 chmod +x rofi-ivpn.sh
 ```
 
-2. Run the script:
+3. Run the script:
 ```bash
 ./rofi-ivpn.sh
 ```
@@ -87,12 +97,18 @@ Block IVPN Servers
 - Uses `ivpn disconnect`
 
 ## Requirements
-- IVPN CLI
-- Rofi
-- Bash
+
+- [IVPN CLI](https://www.ivpn.net/apps-linux/) - IVPN's command-line interface
+- [Rofi](https://github.com/davatorium/rofi) - A window switcher, application launcher and dmenu replacement
+- Bash - The GNU Bourne Again Shell
 
 ## Notes
+
 - The script uses the IVPN CLI command `ivpn`
 - Server list updates automatically
 - Status shows current connection state and country
-- All commands are executed through the IVPN CLI 
+- All commands are executed through the IVPN CLI
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
