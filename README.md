@@ -108,7 +108,3 @@ Block IVPN Servers
 - Server list updates automatically
 - Status shows current connection state and country
 - All commands are executed through the IVPN CLI
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
