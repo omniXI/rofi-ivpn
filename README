@@ -1,0 +1,98 @@
+# IVPN Rofi Menu
+
+A simple and efficient way to manage your IVPN connection using Rofi.
+
+## Features
+
+- Quick connect to fastest server
+- Server selection with search functionality
+- Firewall management
+- Connection status display
+- Disconnect option
+
+## Installation
+
+1. Make the script executable:
+```bash
+chmod +x rofi-ivpn.sh
+```
+
+2. Run the script:
+```bash
+./rofi-ivpn.sh
+```
+
+## Usage
+
+### Navigation
+- Use arrow keys to navigate
+- Type to search servers
+- Enter to select
+- Esc to exit
+
+### Menu Structure
+
+#### Main Menu
+```
+[Status: CONNECTED Singapore]
+Quick Connect
+Servers
+Firewall
+Disconnect
+```
+
+#### Server Selection
+```
+[Search/Filter: ]
+WireGuard | Singapore (SG)
+WireGuard | Tokyo (JP)
+OpenVPN | London (UK)
+...
+```
+- Type to filter by country/location
+- Shows protocol, location, and country
+- Select to connect to specific server
+
+#### Firewall Menu
+```
+[Firewall Status: Enabled]
+Enable Firewall
+Disable Firewall
+Allow LAN
+Block LAN
+Allow IVPN Servers
+Block IVPN Servers
+```
+
+## Menu Options
+
+### Quick Connect
+- Connects to the fastest available server
+- Uses `ivpn connect -f`
+
+### Servers
+- Shows list of all available servers
+- Displays protocol, location, and country
+- Search functionality to filter servers
+- Select to connect to specific server
+
+### Firewall
+- Enable/Disable IVPN firewall
+- Control LAN access
+- Manage IVPN server access
+- All changes take effect immediately
+
+### Disconnect
+- Disconnects from current VPN server
+- Uses `ivpn disconnect`
+
+## Requirements
+- IVPN CLI
+- Rofi
+- Bash
+
+## Notes
+- The script uses the IVPN CLI command `ivpn`
+- Server list updates automatically
+- Status shows current connection state and country
+- All commands are executed through the IVPN CLI 
